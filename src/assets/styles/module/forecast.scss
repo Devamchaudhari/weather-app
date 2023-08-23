@@ -1,0 +1,56 @@
+@import '../_variable';
+.forecast_header__container {
+	.background__weather {
+		object-fit: cover;
+		transition-property: all;
+		filter: brightness(0.6);
+		animation: fadeIn 3s;
+	}
+	.search_wrapper {
+		.search_icon {
+			top: 8px;
+			left: 8px;
+		}
+	}
+}
+.forecast__widget {
+	background-color: $white;
+	background-image: url('../../image/unsplash_RwVqa6ST69E.png');
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: rgba(120, 120, 130, 0.2) 0px 7px 29px 0px;
+
+	.forecast__wrapper {
+		transition-property: all;
+		animation: fadeIn 3s;
+		.weather__icon {
+			svg {
+				width: 50px;
+				height: 50px;
+			}
+		}
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.break__line {
+	background-color: #dedede;
+	height: 2px;
+	width: calc(100% - 90px);
+	margin: 0 auto;
+	border-radius: 25px;
+}
+
+.horizontal_break__line {
+	border-left: 2px solid #dedede;
+	height: 200px;
+}
