@@ -12,7 +12,7 @@ const Forecast = () => {
 	const [weatherData, setWeatherData] = useState<Record<string, any>>({});
 	const [isLoading, setIsLoading] = useState(false);
 	const [forecastData, setForecastData] = useState<IForecastChartData[]>([]);
-	const API_key = process.env.REACT_APP_API_KEY;
+	const API_key = import.meta.env.VITE_API_KEY;
 
 	const getCurrentLocation = useCallback(() => {
 		navigator.geolocation.getCurrentPosition((position: GeolocationPosition) => {
