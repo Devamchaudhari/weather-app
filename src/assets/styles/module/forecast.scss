@@ -1,4 +1,4 @@
-@import '../_variable';
+@use '../_variable';
 .forecast_header__container {
 	.background__weather {
 		object-fit: cover;
@@ -14,7 +14,7 @@
 	}
 }
 .forecast__widget {
-	background-color: $white;
+	background-color: variable.$white;
 	background-image: url('../../image/unsplash_RwVqa6ST69E.png');
 	height: 500px;
 	background-position: center;

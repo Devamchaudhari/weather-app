@@ -1,3 +1,6 @@
+@use 'variable';
+@use './common/mixin';
+
 *,
 *::after,
 *::before {
@@ -6,23 +9,23 @@
 
 * {
 	font-family: 'Poppins';
-	font-size: $font-size-browser-default;
+	font-size: variable.$font-size-browser-default;
 }
 
 body {
-	@include margin(0);
-	@include padding(0);
-	background-color: $white;
-	font-size: $font-size-browser-default;
-	font-weight: $font-regular;
-	color: $white;
+	@include mixin.margin(0);
+	@include mixin.padding(0);
+	background-color: variable.$white;
+	font-size: variable.$font-size-browser-default;
+	font-weight: variable.$font-regular;
+	color: variable.$white;
 	scroll-behavior: smooth;
 	overflow: hidden;
 }
 
 ::-webkit-scrollbar {
 	width: 5px;
-	border-radius: $border-radius-default;
+	border-radius: variable.$border-radius-default;
 	box-shadow: inset 0 0 4px -0.5px rgba(0, 0, 0, 0.2);
 }
 
@@ -31,8 +34,8 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-	border-radius: $border-radius-default;
-	background-color: $primary;
+	border-radius: variable.$border-radius-default;
+	background-color: variable.$primary;
 }
 
 a {
@@ -54,14 +57,14 @@ p {
 }
 
 ul {
-	@include padding(0);
+	@include mixin.padding(0);
 	list-style: none;
 }
 
 input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button {
 	-webkit-appearance: none;
-	@include margin(0);
+	@include mixin.margin(0);
 }
 
 input[type='number'] {

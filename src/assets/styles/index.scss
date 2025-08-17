@@ -1,13 +1,14 @@
-@import 'fonts';
-@import '_variable';
+@use "sass:meta";
+@use 'fonts';
+@use '_variable';
 @import 'animate.min.css';
 
-@import 'common/mixin';
-@import 'common/extend';
-@import 'common/function';
-@import 'common/common';
-@import 'common/form';
-@import 'common/model';
+@include meta.load-css('common/mixin');
+@include meta.load-css('common/extend');
+@include meta.load-css('common/function');
+@include meta.load-css('common/common');
+@include meta.load-css('common/form');
+@include meta.load-css('common/model');
 
-@import '_base';
-@import 'responsive';
+@include meta.load-css('_base');
+@include meta.load-css('responsive');

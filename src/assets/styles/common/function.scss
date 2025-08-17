@@ -1,3 +1,4 @@
+@use 'sass:map';
 @function getColor($color, $tone) {
-	@return map-get($map: $color, $key: $tone);
+	@return map.get($map: $color, $key: $tone);
 }

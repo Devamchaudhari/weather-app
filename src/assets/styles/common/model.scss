@@ -1,6 +1,9 @@
+@use '../variable';
+@use './mixin';
+
 .modal {
-	width: $full-width;
-	height: $full-height;
+	width: variable.$full-width;
+	height: variable.$full-height;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -20,7 +23,7 @@
 		.modal__body {
 			max-height: 300px !important;
 			box-sizing: content-box;
-			@include padding(0 20px);
+			@include mixin.padding(0 20px);
 		}
 	}
 }
