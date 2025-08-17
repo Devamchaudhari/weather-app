@@ -1,9 +1,14 @@
+@use '../variable';
+@use './mixin';
+@use './function.scss';
+@use './extend';
+
 .no--margin {
-	@include margin(0);
+	@include mixin.margin(0);
 }
 
 .no--padding {
-	@include padding(0);
+	@include mixin.padding(0);
 }
 
 .no--border {
@@ -163,11 +168,11 @@
 }
 
 .width--full {
-	width: $full-width !important;
+	width: variable.$full-width !important;
 }
 
 .width--full-viewport {
-	width: $full-viewport-width;
+	width: variable.$full-viewport-width;
 }
 
 .max-width--half {
@@ -197,11 +202,11 @@
 }
 
 .height--full {
-	height: $full-height;
+	height: variable.$full-height;
 }
 
 .height--full-viewport {
-	height: $full-viewport-height;
+	height: variable.$full-viewport-height;
 }
 .height--fit-content {
 	height: fit-content !important;
@@ -286,360 +291,360 @@
 }
 
 .m--auto {
-	@include margin(auto);
+	@include mixin.margin(auto);
 }
 
 .m--0-auto {
-	@include margin(0 auto);
+	@include mixin.margin(0 auto);
 }
 
 .m--auto-0 {
-	@include margin(auto 0);
+	@include mixin.margin(auto 0);
 }
 
 .m--10 {
-	@include margin(10px);
+	@include mixin.margin(10px);
 }
 
 .m--20 {
-	@include margin(20px);
+	@include mixin.margin(20px);
 }
 .m--25 {
-	@include margin(25px);
+	@include mixin.margin(25px);
 }
 .m--35 {
-	@include margin(35px);
+	@include mixin.margin(35px);
 }
 
 .mt--0 {
-	@include marginTop(0);
+	@include mixin.marginTop(0);
 }
 
 .mt--4 {
-	@include marginTop(4px);
+	@include mixin.marginTop(4px);
 }
 
 .mt--5 {
-	@include marginTop(5px);
+	@include mixin.marginTop(5px);
 }
 
 .mt--8 {
-	@include marginTop(8px);
+	@include mixin.marginTop(8px);
 }
 
 .mt--10 {
-	@include marginTop(10px);
+	@include mixin.marginTop(10px);
 }
 
 .mt--15 {
-	@include marginTop(15px);
+	@include mixin.marginTop(15px);
 }
 
 .mt--20 {
-	@include marginTop(20px);
+	@include mixin.marginTop(20px);
 }
 
 .mt--25 {
-	@include marginTop(25px);
+	@include mixin.marginTop(25px);
 }
 
 .mt--30 {
-	@include marginTop(30px);
+	@include mixin.marginTop(30px);
 }
 
 .mt--35 {
-	@include marginTop(35px);
+	@include mixin.marginTop(35px);
 }
 
 .mt--40 {
-	@include marginTop(40px);
+	@include mixin.marginTop(40px);
 }
 
 .mt--50 {
-	@include marginTop(50px);
+	@include mixin.marginTop(50px);
 }
 
 .mt--60 {
-	@include marginTop(60px);
+	@include mixin.marginTop(60px);
 }
 .mt--65 {
-	@include marginTop(65px);
+	@include mixin.marginTop(65px);
 }
 
 .mt--auto {
-	@include marginTop(auto);
+	@include mixin.marginTop(auto);
 }
 
 .mr--0 {
-	@include marginRight(0);
+	@include mixin.marginRight(0);
 }
 
 .mr--5 {
-	@include marginRight(5px);
+	@include mixin.marginRight(5px);
 }
 
 .mr--10 {
-	@include marginRight(10px);
+	@include mixin.marginRight(10px);
 }
 
 .mr--15 {
-	@include marginRight(15px);
+	@include mixin.marginRight(15px);
 }
 
 .mr--20 {
-	@include marginRight(20px);
+	@include mixin.marginRight(20px);
 }
 
 .mr--25 {
-	@include marginRight(25px);
+	@include mixin.marginRight(25px);
 }
 
 .mr--30 {
-	@include marginRight(30px);
+	@include mixin.marginRight(30px);
 }
 
 .mr--32 {
-	@include marginRight(32px);
+	@include mixin.marginRight(32px);
 }
 
 .mr--35 {
-	@include marginRight(35px);
+	@include mixin.marginRight(35px);
 }
 
 .mr--40 {
-	@include marginRight(40px);
+	@include mixin.marginRight(40px);
 }
 
 .mr--auto {
-	@include marginRight(auto);
+	@include mixin.marginRight(auto);
 }
 
 .mb--0 {
-	@include marginBottom(0);
+	@include mixin.marginBottom(0);
 }
 
 .mb--5 {
-	@include marginBottom(5px);
+	@include mixin.marginBottom(5px);
 }
 
 .mb--7 {
-	@include marginBottom(7px);
+	@include mixin.marginBottom(7px);
 }
 
 .mb--10 {
-	@include marginBottom(10px);
+	@include mixin.marginBottom(10px);
 }
 
 .mb--15 {
-	@include marginBottom(15px);
+	@include mixin.marginBottom(15px);
 }
 
 .mb--20 {
-	@include marginBottom(20px);
+	@include mixin.marginBottom(20px);
 }
 
 .mb--25 {
-	@include marginBottom(25px);
+	@include mixin.marginBottom(25px);
 }
 
 .mb--28 {
-	@include marginBottom(25px);
+	@include mixin.marginBottom(25px);
 }
 
 .mb--30 {
-	@include marginBottom(30px);
+	@include mixin.marginBottom(30px);
 }
 
 .mb--35 {
-	@include marginBottom(35px);
+	@include mixin.marginBottom(35px);
 }
 
 .mb--45 {
-	@include marginBottom(45px);
+	@include mixin.marginBottom(45px);
 }
 
 .mb--50 {
-	@include marginBottom(50px);
+	@include mixin.marginBottom(50px);
 }
 
 .mb--60 {
-	@include marginBottom(60px);
+	@include mixin.marginBottom(60px);
 }
 
 .mb--65 {
-	@include marginBottom(65px);
+	@include mixin.marginBottom(65px);
 }
 
 .mb--auto {
-	@include marginBottom(auto);
+	@include mixin.marginBottom(auto);
 }
 
 .ml--0 {
-	@include marginLeft(0);
+	@include mixin.marginLeft(0);
 }
 
 .ml--5 {
-	@include marginLeft(5px);
+	@include mixin.marginLeft(5px);
 }
 
 .ml--7 {
-	@include marginLeft(7px);
+	@include mixin.marginLeft(7px);
 }
 
 .ml--10 {
-	@include marginLeft(10px);
+	@include mixin.marginLeft(10px);
 }
 
 .ml--15 {
-	@include marginLeft(15px);
+	@include mixin.marginLeft(15px);
 }
 
 .ml--17 {
-	@include marginLeft(17px);
+	@include mixin.marginLeft(17px);
 }
 
 .ml--20 {
-	@include marginLeft(20px);
+	@include mixin.marginLeft(20px);
 }
 
 .ml--25 {
-	@include marginLeft(25px);
+	@include mixin.marginLeft(25px);
 }
 
 .ml--30 {
-	@include marginLeft(30px);
+	@include mixin.marginLeft(30px);
 }
 
 .ml--40 {
-	@include marginLeft(40px);
+	@include mixin.marginLeft(40px);
 }
 
 .ml--45 {
-	@include marginLeft(40px);
+	@include mixin.marginLeft(40px);
 }
 
 .ml--auto {
-	@include marginLeft(auto);
+	@include mixin.marginLeft(auto);
 }
 
 .p--0 {
-	@include padding(0);
+	@include mixin.padding(0);
 }
 
 .p--10 {
-	@include padding(10px);
+	@include mixin.padding(10px);
 }
 
 .p--20 {
-	@include padding(20px);
+	@include mixin.padding(20px);
 }
 
 .p--25 {
-	@include padding(25px);
+	@include mixin.padding(25px);
 }
 
 .p--30 {
-	@include padding(30px);
+	@include mixin.padding(30px);
 }
 
 .pt--5 {
-	@include paddingTop(5px);
+	@include mixin.paddingTop(5px);
 }
 
 .pt--10 {
-	@include paddingTop(10px);
+	@include mixin.paddingTop(10px);
 }
 
 .pt--15 {
-	@include paddingTop(15px);
+	@include mixin.paddingTop(15px);
 }
 
 .pt--20 {
-	@include paddingTop(20px);
+	@include mixin.paddingTop(20px);
 }
 
 .pt--23 {
-	@include paddingTop(23px);
+	@include mixin.paddingTop(23px);
 }
 
 .pt--25 {
-	@include paddingTop(25px);
+	@include mixin.paddingTop(25px);
 }
 
 .pr--0 {
-	@include paddingRight(0);
+	@include mixin.paddingRight(0);
 }
 
 .pr--5 {
-	@include paddingRight(5px);
+	@include mixin.paddingRight(5px);
 }
 
 .pr--10 {
-	@include paddingRight(10px);
+	@include mixin.paddingRight(10px);
 }
 
 .pr--15 {
-	@include paddingRight(15px);
+	@include mixin.paddingRight(15px);
 }
 
 .pr--20 {
-	@include paddingRight(20px);
+	@include mixin.paddingRight(20px);
 }
 
 .pr--25 {
-	@include paddingRight(25px);
+	@include mixin.paddingRight(25px);
 }
 
 .pr--30 {
-	@include paddingRight(30px);
+	@include mixin.paddingRight(30px);
 }
 
 .pb--0 {
-	@include paddingBottom(0);
+	@include mixin.paddingBottom(0);
 }
 
 .pb--5 {
-	@include paddingBottom(5px);
+	@include mixin.paddingBottom(5px);
 }
 
 .pb--10 {
-	@include paddingBottom(10px);
+	@include mixin.paddingBottom(10px);
 }
 
 .pb--15 {
-	@include paddingBottom(15px);
+	@include mixin.paddingBottom(15px);
 }
 
 .pb--20 {
-	@include paddingBottom(20px);
+	@include mixin.paddingBottom(20px);
 }
 
 .pl--0 {
-	@include paddingLeft(0);
+	@include mixin.paddingLeft(0);
 }
 
 .pl--5 {
-	@include paddingLeft(5px);
+	@include mixin.paddingLeft(5px);
 }
 
 .pl--10 {
-	@include paddingLeft(10px);
+	@include mixin.paddingLeft(10px);
 }
 
 .pl--15 {
-	@include paddingLeft(15px);
+	@include mixin.paddingLeft(15px);
 }
 
 .pl--20 {
-	@include paddingLeft(20px);
+	@include mixin.paddingLeft(20px);
 }
 
 .pl--30 {
-	@include paddingLeft(30px);
+	@include mixin.paddingLeft(30px);
 }
 
 .pl--50 {
-	@include paddingLeft(50px);
+	@include mixin.paddingLeft(50px);
 }
 
 .top--10 {
@@ -773,31 +778,31 @@
 }
 
 .font-size--xxs {
-	font-size: $font-size-xxs;
+	font-size: variable.$font-size-xxs;
 }
 
 .font-size--xs {
-	font-size: $font-size-xs;
+	font-size: variable.$font-size-xs;
 }
 
 .font-size--sm {
-	font-size: $font-size-sm;
+	font-size: variable.$font-size-sm;
 }
 
 .font-size--default {
-	font-size: $font-size-default;
+	font-size: variable.$font-size-default;
 }
 
 .font-size--browser-default {
-	font-size: $font-size-browser-default;
+	font-size: variable.$font-size-browser-default;
 }
 
 .font-size--md {
-	font-size: $font-size-md;
+	font-size: variable.$font-size-md;
 }
 
 .font-size--lg {
-	font-size: $font-size-lg;
+	font-size: variable.$font-size-lg;
 }
 
 .font-size--22 {
@@ -805,11 +810,11 @@
 }
 
 .font-size--xl {
-	font-size: $font-size-xl;
+	font-size: variable.$font-size-xl;
 }
 
 .font-size--xxl {
-	font-size: $font-size-xxl;
+	font-size: variable.$font-size-xxl;
 }
 
 .font-size--24 {
@@ -847,19 +852,19 @@
 	font-size: 8rem;
 }
 .line-height--sm {
-	line-height: $line-height-sm;
+	line-height: variable.$line-height-sm;
 }
 
 .line-height--default {
-	line-height: $line-height-default;
+	line-height: variable.$line-height-default;
 }
 
 .line-height--md {
-	line-height: $line-height-md;
+	line-height: variable.$line-height-md;
 }
 
 .line-height--lg {
-	line-height: $line-height-lg;
+	line-height: variable.$line-height-lg;
 }
 
 .line-height--20 {
@@ -875,67 +880,67 @@
 }
 
 .font--light {
-	font-weight: $font-light;
+	font-weight: variable.$font-light;
 }
 
 .font--regular {
-	font-weight: $font-regular;
+	font-weight: variable.$font-regular;
 }
 
 .font--medium {
-	font-weight: $font-medium;
+	font-weight: variable.$font-medium;
 }
 
 .font--semi-bold {
-	font-weight: $font-semi-bold;
+	font-weight: variable.$font-semi-bold;
 }
 
 .font--bold {
-	font-weight: $font-bold;
+	font-weight: variable.$font-bold;
 }
 
 .font--extra-bold {
-	font-weight: $font-extra-bold;
+	font-weight: variable.$font-extra-bold;
 }
 
 .font--heavy {
-	font-weight: $font-heavy;
+	font-weight: variable.$font-heavy;
 }
 
 .font--extra-heavy {
-	font-weight: $font-extra-heavy;
+	font-weight: variable.$font-extra-heavy;
 }
 
 .font-light {
-	font-weight: $font-light;
+	font-weight: variable.$font-light;
 }
 
 .font-regular {
-	font-weight: $font-regular;
+	font-weight: variable.$font-regular;
 }
 
 .font-medium {
-	font-weight: $font-medium;
+	font-weight: variable.$font-medium;
 }
 
 .font-semi-bold {
-	font-weight: $font-semi-bold;
+	font-weight: variable.$font-semi-bold;
 }
 
 .font-bold {
-	font-weight: $font-bold;
+	font-weight: variable.$font-bold;
 }
 
 .font-extra-bold {
-	font-weight: $font-extra-bold;
+	font-weight: variable.$font-extra-bold;
 }
 
 .font-heavy {
-	font-weight: $font-heavy;
+	font-weight: variable.$font-heavy;
 }
 
 .font-extra-heavy {
-	font-weight: $font-extra-heavy;
+	font-weight: variable.$font-extra-heavy;
 }
 
 .text--lowercase {
@@ -1098,7 +1103,7 @@
 }
 
 .fill--white {
-	fill: $white;
+	fill: variable.$white;
 	&.with-opacity-50 {
 		opacity: 0.5;
 	}
@@ -1109,43 +1114,43 @@
 }
 
 .fill--comet {
-	fill: $comet;
+	fill: variable.$comet;
 }
 
 .fill--primary {
-	fill: $primary;
+	fill: variable.$primary;
 }
 
 .fill--grey {
-	@include getShadesColorClasses($grey, 'fill');
+	@include mixin.getShadesColorClasses(variable.$grey, 'fill');
 }
 
 .fill--success {
-	@include getShadesColorClasses($success, 'fill');
+	@include mixin.getShadesColorClasses(variable.$success, 'fill');
 }
 
 .fill--green {
-	fill: $green;
+	fill: variable.$green;
 }
 
 .fill--red {
-	@include getShadesColorClasses($red, 'fill');
+	@include mixin.getShadesColorClasses(variable.$red, 'fill');
 }
 
 .stroke--white {
-	stroke: $white;
+	stroke: variable.$white;
 }
 
 .stroke--primary {
-	stroke: $primary;
+	stroke: variable.$primary;
 }
 
 .text--primary {
-	color: $primary;
+	color: variable.$primary;
 }
 
 .text--white {
-	color: $white;
+	color: variable.$white;
 	&.with-opacity-50 {
 		opacity: 0.5;
 	}
@@ -1155,83 +1160,83 @@
 }
 
 .text--red {
-	@include getShadesColorClasses($red, 'color');
+	@include mixin.getShadesColorClasses(variable.$red, 'color');
 }
 .text--success {
-	@include getShadesColorClasses($success, 'color');
+	@include mixin.getShadesColorClasses(variable.$success, 'color');
 }
 
 .text--blue {
-	@include getShadesColorClasses($blue, 'color');
+	@include mixin.getShadesColorClasses(variable.$blue, 'color');
 }
 
 .text--black {
-	color: $black;
+	color: variable.$black;
 }
 .text--grey {
-	color: getColor($grey, 100);
+	color: function.getColor(variable.$grey, 100);
 }
 .bg--grey {
-	@include getShadesColorClasses($grey, 'background-color');
+	@include mixin.getShadesColorClasses(variable.$grey, 'background-color');
 }
 
 .bg--primary {
-	background-color: $primary;
+	background-color: variable.$primary;
 }
 
 .bg--white {
-	background-color: $white;
+	background-color: variable.$white;
 	&.with-opacity-10 {
 		opacity: 0.1;
 	}
 }
 
 .bg--black {
-	background-color: $black;
+	background-color: variable.$black;
 }
 
 .bg--red {
-	@include getShadesColorClasses($red, 'background-color');
+	@include mixin.getShadesColorClasses(variable.$red, 'background-color');
 }
 
 .bg--blue {
-	@include getShadesColorClasses($blue, 'background-color');
+	@include mixin.getShadesColorClasses(variable.$blue, 'background-color');
 }
 
 .bg--green {
-	background-color: $green;
+	background-color: variable.$green;
 }
 
 .bg--orange-gradient {
-	background: $orange--gradient;
+	background: variable.$orange--gradient;
 }
 
 .bg--blue-gradient {
-	background: $blue--gradient;
+	background: variable.$blue--gradient;
 }
 
 .bg--violet-gradient {
-	background: $violet--gradient;
+	background: variable.$violet--gradient;
 }
 
 .bg--green-gradient {
-	background: $green--gradient;
+	background: variable.$green--gradient;
 }
 
 .bg--purple-gradient {
-	background: $purple--gradient;
+	background: variable.$purple--gradient;
 }
 
 .bg--yellow-gradient {
-	background: $yellow--gradient;
+	background: variable.$yellow--gradient;
 }
 
 .bg--black-gradient {
-	background: $black--gradient;
+	background: variable.$black--gradient;
 }
 
 .bg--grey-gradient {
-	background: $grey--gradient;
+	background: variable.$grey--gradient;
 }
 
 .bg--transparent {
@@ -1239,7 +1244,7 @@
 }
 
 .border-radius--sm {
-	border-radius: $border-radius-sm;
+	border-radius: variable.$border-radius-sm;
 }
 
 .border-radius--5 {
@@ -1247,19 +1252,19 @@
 }
 
 .border-radius--default {
-	border-radius: $border-radius-default;
+	border-radius: variable.$border-radius-default;
 }
 
 .border-radius--lg {
-	border-radius: $border-radius-lg !important;
+	border-radius: variable.$border-radius-lg !important;
 }
 
 .border-radius--xxl {
-	border-radius: $border-radius-xxl;
+	border-radius: variable.$border-radius-xxl;
 }
 
 .border-radius--half {
-	border-radius: $border-radius-circle;
+	border-radius: variable.$border-radius-circle;
 }
 
 .border-radius--100 {
@@ -1291,14 +1296,14 @@
 .round-icon {
 	width: 52px;
 	height: 52px;
-	border-radius: $border-radius-circle;
+	border-radius: variable.$border-radius-circle;
 	svg {
 		width: 20px;
 		height: 20px;
 	}
 
 	&.with-border {
-		border: 1px solid $white;
+		border: 1px solid variable.$white;
 	}
 
 	&.action-icon {
@@ -1317,6 +1322,6 @@
 }
 
 .error {
-	color: getColor($red, 200);
-	@include marginTop(10px);
+	color: function.getColor(variable.$red, 200);
+	@include mixin.marginTop(10px);
 }
